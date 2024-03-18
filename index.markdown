@@ -104,14 +104,15 @@ src="http://b5tcdn.bang5mai.com/js/flag.js?v=156945351"></script>
     <a href="https://skybhh19.github.io/" target="_blank">Tian Gao<sup>1</sup></a>&nbsp;&nbsp;&nbsp;
     <a href="http://snasiriany.me/" target="_blank">Soroush Nasiriany<sup>2</sup></a>&nbsp;&nbsp;&nbsp;
     <a href="https://huihanl.github.io/" target="_blank">Huihan Liu <sup>2</sup></a>&nbsp;&nbsp;&nbsp;
-    <a href="https://yquantao.github.io/" target="_blank">Quantao Yang<sup>2</sup></a>&nbsp;&nbsp;&nbsp;
+    <a href="https://yquantao.github.io/" target="_blank">Quantao Yang<sup>3</sup></a>&nbsp;&nbsp;&nbsp;
     <a href="https://cs.utexas.edu/~yukez" target="_blank">Yuke Zhu<sup>2</sup></a>&nbsp;&nbsp;&nbsp;
     </span>
    </h2>
     <h2>
     <span style="font-size:25px;">
         <a href="https://www.stanford.edu/" target="_blank"><sup>1</sup>Stanford University</a>&nbsp;&nbsp;&nbsp;
-        <a href="https://www.cs.utexas.edu/" target="_blank"><sup>2</sup>The University of Texas at Austin</a>   
+        <a href="https://www.cs.utexas.edu/" target="_blank"><sup>2</sup>The University of Texas at Austin</a>&nbsp;&nbsp;&nbsp; 
+		<a href="https://www.kth.se/en" target="_blank"><sup>3</sup>KTH Royal Institute of Technology</a>
         </span>
     </h2>
     <!-- <h2>
@@ -119,7 +120,7 @@ src="http://b5tcdn.bang5mai.com/js/flag.js?v=156945351"></script>
     </h2> -->
 
 <!-- <center><h2><span style="font-size:25px;"><a><b>Paper</b></a> &emsp; <a><b>Code</b></a></span></h2></center> -->
-<center><h2><span style="font-size:25px;"><a><b>Paper</b></a></span></h2></center>
+<center><h2><span style="font-size:25px;"><a href="http://arxiv.org/abs/2403.00929" target="_blank"><b>Paper</b></a></span></h2></center>
 <!-- <center><h2><span style="font-size:25px;"><a href="https://arxiv.org/abs/2210.11435" target="_blank"><b>Paper</b></a> &emsp; <a href="https://github.com/UT-Austin-RPL/sailor" target="_blank"><b>Code</b></a></span></h2></center> -->
 
 <p>
@@ -153,7 +154,7 @@ Imitation learning has shown great potential for enabling robots to acquire comp
                 <tr>
                     <td>
   <p align="justify" width="20%">
-  We present a data-efficient imitation learning framework that scaffolds task demonstrations into behavior primitives. Given task demonstrations, we utilize a trajectory parser to parse each demonstration into a sequence of primitive types and their corresponding parameters. Subsequently, we use imitation learning to acquire a policy capable of predicting primitive types and corresponding parameters based on observations.
+  We present a data-efficient imitation learning framework that scaffolds manipulation tasks with behavior primitives, breaking down long human demonstrations into concise, simple behavior primitive sequences. Given task demonstrations, we utilize a trajectory parser to parse each demonstration into a sequence of primitive types and their corresponding parameters. Subsequently, we use imitation learning to train a policy capable of predicting primitive types and corresponding parameters based on observations.
 </p></td></tr></table>
 
 
@@ -172,7 +173,7 @@ Imitation learning has shown great potential for enabling robots to acquire comp
 </table>
 
 <table width=800px><tr><td> <p align="justify" width="20%">
-We develop a self-supervised data generation strategy that randomly executes sequences of behavior primitives in the environment. With the generated dataset, we train an inverse dynamics model (IDM) that maps initial states and final states from segments in task demonstrations to primitive types and corresponding parameters. To derive the optimal primitive sequences, we build a trajectory parser capable of parsing task demonstrations into primitive sequences using the learned inverse dynamics model. Finally, we train the policy using parsed primitive sequences.</p></td></tr></table>
+We develop a self-supervised data generation strategy that randomly executes sequences of behavior primitives in the environment. With the generated dataset, we train an inverse dynamics model (IDM) that maps initial states and final states from segments in task demonstrations to primitive types and corresponding parameters. To derive the optimal primitive sequences, we build a trajectory parser capable of parsing task demonstrations into primitive sequences using dynamic programming. Finally, we train the policy using parsed primitive sequences.</p></td></tr></table>
 
 <br>
 
@@ -211,7 +212,7 @@ We perform evaluations on three tasks from the robosuite simulator. The first tw
 <br>
 <br>
 <table width=800px><tr><td> <p align="justify" width="20%">
-Our method significantly outperforms all baselines, achieving success rates exceeding 95% across all tasks with remarkable robustness. This showcases our method's effectiveness in achieving data-efficient imitation learning through the decomposition of sensorimotor demonstrations into concise primitive sequences to simplify task complexity.
+Our method significantly outperforms all baselines, achieving success rates exceeding 95% across all tasks with remarkable robustness. This showcases our method's effectiveness in achieving data-efficient imitation learning through the decomposition of task demonstrations into concise primitive sequences to simplify task complexity.
 </p></td></tr></table>
 
 
@@ -305,12 +306,12 @@ For each task, we select five human demonstrations and visualize the segmented p
                   <td>
                   <left>
 <pre><code style="display:block; overflow-x: auto">
-    <!--@inproceedings{nasiriany2022sailor,
-      title={Learning and Retrieval from Prior Data for Skill-based Imitation Learning},
-      author={Soroush Nasiriany and Tian Gao and Ajay Mandlekar and Yuke Zhu},
-      booktitle={Conference on Robot Learning (CoRL)},
-      year={2022}
-    }-->
+    @article{gao2024prime,
+	  title={PRIME: Scaffolding Manipulation Tasks with Behavior Primitives for Data-Efficient Imitation Learning},
+	  author={Gao, Tian and Nasiriany, Soroush and Liu, Huihan and Yang, Quantao and Zhu, Yuke},
+	  journal={arXiv preprint arXiv:2403.00929},
+	  year={2024}
+	}
 </code></pre>
 </left></td></tr></table>
 <br><br>
