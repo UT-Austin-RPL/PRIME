@@ -301,18 +301,16 @@ For each task, we select five human demonstrations and visualize the segmented p
 <hr>
 <center><h1>Citation</h1></center>
 
-<table align=center width=800px>
+<table align=center width=900px>
               <tr>
                   <td>
                   <left>
-<pre><code style="display:block; overflow-x: auto">
-    @article{gao2024prime,
-	  title={PRIME: Scaffolding Manipulation Tasks with Behavior Primitives for Data-Efficient Imitation 
-	  Learning},
-	  author={Gao, Tian and Nasiriany, Soroush and Liu, Huihan and Yang, Quantao and Zhu, Yuke},
-	  journal={arXiv preprint arXiv:2403.00929},
-	  year={2024}
-	}
+<pre><code style="display:block; overflow-x: auto">@article{gao2024prime,
+  title={PRIME: Scaffolding Manipulation Tasks with Behavior Primitives for Data-Efficient Imitation Learning},
+  author={Tian Gao and Soroush Nasiriany and Huihan Liu and Quantao Yang and Yuke Zhu},
+  journal={IEEE Robotics and Automation Letters (RA-L)},
+  year={2024}
+}
 </code></pre>
 </left></td></tr></table>
 <br><br>
