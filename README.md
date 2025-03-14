@@ -29,7 +29,7 @@ pip install torch==1.13.1 torchvision==0.14.1
 ```
 Install robosuite.
 ```commandline
-git clone https://github.com/skybhh19/robosuite.git
+git clone -b prime https://github.com/ARISE-Initiative/robosuite.git
 cd robosuite
 pip install -r requirements.txt
 pip install -r requirements-extra.txt
